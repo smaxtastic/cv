@@ -1,0 +1,171 @@
+\documentclass{scrartcl}
+
+\usepackage[LabelsAligned]{currvita}
+\usepackage[nochapters]{classicthesis}
+\usepackage{hyperref}
+
+% Set link colors
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
+
+% Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{Mar 2013-Jul 2014}
+
+% Move the margin to the left of the page
+\reversemarginpar
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+
+% New command defining the margin text style
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
+
+\newcommand{\NewEntry}[2]{
+    \noindent
+    \hangindent=2em
+    \hangafter=0
+    \parbox{\datebox}
+    {\small\textit{#1}}\hspace{2em}\begin{minipage}[t]{18em}#2\end{minipage}
+    \vspace{0.5em}
+}
+
+\newcommand{\Description}[1]{
+    \hangindent=2em
+    \hangafter=0
+    \noindent
+    \raggedright
+    \footnotesize{#1}
+    \par
+    \normalsize
+    \vspace{1em}
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+	\begin{cv}{\spacedallcaps{Stephan Max}}
+
+		\vspace{2em}
+
+		% PERSONAL INFORMATION
+
+		\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em}
+
+		\NewEntry{address}{Brunswick Street North\\20 The Richmond\\Dublin 7, Ireland}
+
+		\NewEntry{phone}{(M) +353 89 2232619}
+
+		\NewEntry{email}{\href{mailto:stephan.max@gmail.com}{stephan.max@gmail.com}}
+
+		\NewEntry{website}{\href{http://stephanmax.is}{http://stephanmax.is}}
+    
+    \NewEntry{code samples}{\href{https://github.com/smaxtastic}{https://github.com/smaxtastic}}
+
+		\vspace{2em}
+
+		\noindent\spacedlowsmallcaps{Career Objective}\vspace{1em}
+
+		\Description{To work as a software or web developer in a young, agile environment, applying my degree in Computer Science and satisfying my passion for cutting-edge technology}
+
+		\vspace{2em}
+
+		% PROFESSIONAL EXPERIENCE
+
+		\spacedlowsmallcaps{Professional Experience}\vspace{1em}
+
+		\NewEntry{since Nov 2014}{\textsc{IBM Ireland, Dublin}}
+
+		\Description{\MarginText{Cloud Expert}Sales representative and architectural advisor for IBM's cloud development platform \href{http://bluemix.net}{Bluemix}\newline Responsibilities include customer pitches, 1 on 1 demo sessions, holding webinars, advising at hackathons, and being up to speed when it comes to capabilities of \textit{IBM Bluemix} and the state of the art of application development}
+    
+    \NewEntry{Jan--Nov 2014}{\textsc{deepr journalism, Berlin}}
+
+		\Description{\MarginText{Co-Founder/\\Developer}A startup company which tries to reinvent the relationship between readers and journalists (\href{http://godeepr.com}{godeepr.com})\newline Main developer, website programming (Ruby on Rales, \textsc{PHP}, \textsc{JS}), database management (SQL), front end developer}
+
+		\NewEntry{Mar 2013--Jul 2014}{\textsc{Satzweiss.com, Saarbruecken}}
+
+		\Description{\MarginText{Developer}Front end developer, planned and implemented several web applications (\textsc{HTML5}, \textsc{JS}, Cordova)\newline Back end development with Zope/Plone and Python for the ebook management/deployment solution developed in-house\newline Responsible for code maintenance, testing, debugging, and agile methodologies}
+
+		\NewEntry{Aug--Oct 2011}{\textsc{IMDEA Software, Madrid}}
+
+		\Description{\MarginText{Research Intern}Contributed to the paper \textit{``Automatic Quantification of Cache Side Channels''}}
+
+		\NewEntry{2011--2012}{\textsc{MPII, Saarbruecken}}
+
+		\Description{\MarginText{Research Assistant}Research on the spreading of information in different graph models}
+
+		\NewEntry{2008--2011}{\textsc{Saarland University, Saarbruecken}}
+
+		\Description{\MarginText{Teaching Assistant}Supervised lectures such as \textit{Programming 1}, \textit{Programming 2}, \textit{Programming for Engineers} and the \textit{Software Design Lab}}
+
+		\NewEntry{Jul--Sep 2006}{\textsc{PC Ware Technologies, Leipzig}}
+
+		\Description{\MarginText{Programmer}Contributed to a workflow management tool developed in-house with C\#}
+
+		\vspace{2em}
+    
+		% EDUCATION
+
+		\spacedlowsmallcaps{Education}\vspace{1em}
+
+		\NewEntry{2011--2013}{\textsc{Saarland University, Saarbruecken}}
+
+		\Description{\MarginText{Master of Computer Science}Member of the Saarbruecken Graduate School of Computer Science}
+
+		\NewEntry{2010--2011}{\textsc{Linkoeping University, Sweden}}
+
+		\Description{\MarginText{Semester Abroad}Erasmus program}
+
+		\NewEntry{2007--2011}{\textsc{Saarland University, Saarbruecken}}
+
+		\Description{\MarginText{Bachelor of Computer Science}Minor: Computational Linguistics\newline Member of the Honors Program for Bachelor Students in Computer Science}
+
+		\NewEntry{1998--2006}{\textsc{Wilhelm-Ostwald-Gymnasium, Leipzig}}
+
+		\Description{\MarginText{Abitur (A Level)}Member of the Technology Student Association (TSA)\newline University entrance qualification}
+
+		\vspace{2em}
+
+		% SCHOLARSHIPS
+
+		\spacedlowsmallcaps{Scholarships}\vspace{1em}
+
+		\Description{\MarginText{2012--2013}Full funding provided by the Graduate School of Computer Science Saarbruecken}
+		\Description{\MarginText{2010--2011}Foreign exchange scholarship of the German National Academic Foundation}
+		\Description{\MarginText{2007--2012}Scholarship holder of the German National Academic Foundation}
+
+		\vspace{2em}
+
+		% VOLUNTARY ACTIVITIES
+
+		\spacedlowsmallcaps{Voluntary Activities}\vspace{1em}
+
+		\NewEntry{since Jan 2012}{\textsc{CISV International}}
+
+		\Description{\MarginText{Peace Education\\Youth Camps}Camp director, staff member, co-organizer, or leader of a German delegation in several international camps in Germany, Costa Rica, Mexico, and Ecuador\newline Member of the National Trainer Team for future delegation leaders}
+
+		\NewEntry{2008--2012}{\textsc{Saarland University, Saarbruecken}}
+
+		\Description{\MarginText{University Policy}Elected member of the student representatives\newline Organized the orientation courses for new students and the job fair \textit{FIT}\newline Developed the campus-wide book order service \textit{Bookmark}}
+
+		\NewEntry{since Mar 2009}{\textsc{XTINCT.info, Leipzig}}
+
+		\Description{\MarginText{Biodiversity}Co-founded this T-shirt campaign against species extinction}
+
+		\NewEntry{2004--2006}{\textsc{Technology Student Association}}
+
+		\Description{\MarginText{Extracurricular Activity}Participated successfully in the annual National TSA Conference in Nashville (2004), Chicago (2005) and Dallas (2006)\newline Reporter, Vice-President and President of TSA Germany}
+
+		\vspace{2em}
+
+		% SKILLS & INTERESTS
+
+		\spacedlowsmallcaps{Skills \& Interests}\vspace{1em}
+
+		\Description{\MarginText{Languages}German (native)\ \ $\cdotp$\ \ \ English (fluent)\ \ $\cdotp$\ \ \ Spanish (basic)\ \ $\cdotp$\ \ \ Swedish (beginner)\ \ $\cdotp$\ \ \ Latin proficiency certificate}
+		\Description{\MarginText{IT}Fluent in numerous programming languages and database flavors, like \textsc{Java}, \textsc{Python}, \textsc{Ruby}, \textsc{C}/\textsc{C++}, \textsc{SQL}\newline Web developer, proficient in \textsc{HTML5}, \textsc{CSS}, \textsc{XML}, \textsc{JavaScript}, \textsc{PHP}, CM systems, SASS, Grunt, experiences with Angular.js, Backbone.js, Node.js\newline Familiar with project management tools, like Git, SVN, Mercurial, Redmine, Trac, Bugzilla}
+		\Description{\MarginText{Hobbies}Guitar\ \ $\cdotp$\ \ \ Traveling and foreign cultures\ \ $\cdotp$\ \ \ Computer art (Blender, Inkscape)\ \ $\cdotp$\ \ \ Volleyball and table tennis\ \ $\cdotp$\ \ \ Cooking\ \ $\cdotp$\ \ \ Good books and movies}
+
+		\date{}
+
+	\end{cv}
+
+\end{document}
